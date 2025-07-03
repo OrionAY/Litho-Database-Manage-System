@@ -1,0 +1,79 @@
+# 光刻机数据管理系统依赖
+# 精简版本，适合内网环境
+
+# 核心数据库驱动
+psycopg[binary]==3.1.12
+psycopg-pool==3.1.8
+asyncpg==0.29.0
+
+# 数据处理和分析 (Python 3.9 兼容版本)
+numpy==1.26.1
+scipy>=1.11.0
+pandas==2.1.2
+
+# 数据库ORM和工具
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+
+# 异步和并发处理
+asyncio-mqtt>=0.16.0
+aiofiles==23.2.1
+asyncio-throttle>=1.0.0
+
+# 多线程和多进程 (concurrent.futures 是 Python 3.9 标准库)
+multiprocessing-logging>=0.3.0
+
+# 内存优化和性能监控
+psutil>=5.9.0
+memory-profiler>=0.61.0
+py-spy>=0.3.14
+
+# 文件处理和监控
+watchdog>=3.0.0
+pathlib2>=2.3.7
+
+# 数据格式处理
+xmltodict>=0.13.0
+pyyaml>=6.0.1
+python-dateutil>=2.8.2
+
+# 日志和配置
+structlog>=23.2.0
+python-dotenv==1.0.0
+
+# Web框架 (用于API和前端服务)
+fastapi==0.104.1
+uvicorn==0.24.0
+jinja2==3.1.2
+
+# 静态文件服务
+aiofiles>=23.2.0
+
+# 数据验证
+pydantic==2.4.2
+
+# 机器学习相关 (可选，为未来扩展)
+# torch>=2.1.0
+# torchvision>=0.16.0
+# scikit-learn>=1.3.0
+
+# 开发和测试工具
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+
+# 数据处理
+python-multipart==0.0.6
+
+# 图片处理
+Pillow>=10.0.0
+
+# 系统监控
+psutil>=5.9.0
+
+# 日志和工具
+colorlog==6.8.0
+
+# 新增依赖项
+httpx==0.25.1 
