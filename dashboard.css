@@ -1,0 +1,308 @@
+/* 光刻机数据管理系统 - 仪表板样式 */
+
+/* 侧边栏样式 */
+.sidebar {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar hr {
+    opacity: 0.3;
+    margin: 1rem 0;
+}
+
+/* 主内容区域 */
+.main-content {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.metric-card {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 机器列表项 */
+.machine-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+}
+
+.machine-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.machine-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid #fff;
+}
+
+.machine-item .badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* 表格样式 */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #343a40;
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 1rem 0.75rem;
+}
+
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* 加载状态 */
+.loading {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.loading.show {
+    display: block;
+}
+
+/* 无数据状态 */
+.no-data {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+.no-data i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* 统计卡片 */
+.stats-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.stats-card.success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.stats-card.info {
+    background: linear-gradient(135deg, #17a2b8 0%, #6f42c1 100%);
+}
+
+.stats-card .card-body {
+    padding: 1.5rem;
+}
+
+.stats-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.stats-card h6 {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.stats-card i {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        padding: 1rem !important;
+    }
+    
+    .stats-card h3 {
+        font-size: 2rem;
+    }
+    
+    .stats-card i {
+        font-size: 2rem;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 工具提示 */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+/* 徽章样式 */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* 代码块样式 */
+code {
+    background-color: #f8f9fa;
+    color: #e83e8c;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+/* 链接样式 */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+/* 按钮样式 */
+.btn-custom {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    color: white;
+}
+
+/* 页面标题 */
+.page-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* 数据表格增强 */
+.data-table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-table .table {
+    margin-bottom: 0;
+}
+
+.data-table .table td {
+    border-top: 1px solid #f8f9fa;
+}
+
+/* 状态指示器 */
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.online {
+    background-color: #28a745;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+.status-indicator.offline {
+    background-color: #dc3545;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.2);
+}
+
+.status-indicator.warning {
+    background-color: #ffc107;
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+} 
